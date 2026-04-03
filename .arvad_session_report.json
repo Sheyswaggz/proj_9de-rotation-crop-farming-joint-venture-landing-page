@@ -6,32 +6,44 @@
   ],
   "decisions": [
     {
-      "what": "Updated benefits section in index.html with three specific benefit cards",
-      "why": "Specification requested benefits section with Sustainable Practices, Proven Profitability, and Expert Management cards with proper semantic HTML structure using section, article, and heading elements"
+      "what": "Replaced opportunity section with comprehensive investment details",
+      "why": "Specification required detailed joint venture opportunity section with investment tiers, returns timeline, partnership structure, and risk mitigation"
     },
     {
-      "what": "Changed section class from 'benefits' to 'benefits-section'",
-      "why": "To match the CSS class naming convention specified in the CSS change description and maintain consistency with other section classes like 'hero-section'"
+      "what": "Added three investment tier cards with different pricing ($50K, $100K, $250K+)",
+      "why": "Specification requested multiple investment tiers with corresponding benefits and a featured tier badge for most popular option"
     },
     {
-      "what": "Updated benefit card content with detailed descriptions",
-      "why": "Specification required detailed content for each benefit: soil health and biodiversity for Sustainable Practices, increased yields and reduced costs for Proven Profitability, and decades of experience and scientific approach for Expert Management"
+      "what": "Created returns timeline with Year 1-3 projections and disclaimer",
+      "why": "Specification required expected returns timeline with disclaimers for transparency"
     },
     {
-      "what": "Added benefit-headline and benefit-description classes to h3 and p elements",
-      "why": "CSS specification required these specific classes for proper typography styling as mentioned in the code change description"
+      "what": "Implemented partnership structure section with roles, profit sharing, and governance details",
+      "why": "Specification called for partnership structure explaining roles, responsibilities, and profit sharing model"
     },
     {
-      "what": "Implemented benefits-section and benefits-grid styles in components.css",
-      "why": "Specification required responsive grid layout using CSS Grid with repeat(auto-fit, minmax(300px, 1fr)) pattern that stacks on mobile"
+      "what": "Added risk mitigation section with four mitigation strategies",
+      "why": "Specification required risk mitigation strategies including crop insurance, diversification, market analysis, and operational reserves"
     },
     {
-      "what": "Added comprehensive benefit card styling with hover effects",
-      "why": "Code change description required background, padding, border-radius, box-shadow, and hover effects for benefit cards"
+      "what": "Used CSS Grid for tier cards, timeline content, structure content, and mitigation content",
+      "why": "Specification requested CSS Grid or Flexbox for tier cards layout, Grid provides better responsive behavior for card layouts"
     },
     {
-      "what": "Styled benefit-icon, benefit-headline, and benefit-description elements",
-      "why": "Specification required distinct typography styles for icons, headlines, and descriptions using CSS custom properties for consistent theming"
+      "what": "Applied professional business-focused styles with proper spacing and typography hierarchy",
+      "why": "Specification required professional appearance with proper spacing, typography, and visual hierarchy for business context"
+    },
+    {
+      "what": "Used CSS custom properties for theming throughout opportunity section styles",
+      "why": "Specification required consistent use of CSS custom properties for theming to maintain design system coherence"
+    },
+    {
+      "what": "Added responsive adjustments using auto-fit minmax pattern",
+      "why": "Specification required responsive adjustments for mobile/tablet/desktop, auto-fit provides automatic responsive behavior"
+    },
+    {
+      "what": "Implemented hover effects and transitions on cards and interactive elements",
+      "why": "Following existing component patterns for consistent user experience across the landing page"
     }
   ],
   "tools_used": [

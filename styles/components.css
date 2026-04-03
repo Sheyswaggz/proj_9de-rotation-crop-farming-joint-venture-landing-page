@@ -182,6 +182,305 @@
 
 
 /* ============================================
+   Opportunity Section Styles
+   ============================================ */
+.opportunity-section {
+  background: linear-gradient(to bottom, var(--white) 0%, var(--neutral-light) 100%);
+  padding: var(--spacing-4xl) 0;
+}
+
+.opportunity-section h2 {
+  text-align: center;
+  color: var(--neutral-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.opportunity-section h3 {
+  color: var(--primary-green);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-xl);
+  margin-top: var(--spacing-3xl);
+  text-align: left;
+}
+
+.opportunity-section article:first-of-type h3 {
+  margin-top: var(--spacing-2xl);
+}
+
+
+/* ============================================
+   Investment Tiers Styles
+   ============================================ */
+.investment-tiers {
+  margin-bottom: var(--spacing-4xl);
+}
+
+.tier-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+}
+
+.tier-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.tier-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-green);
+}
+
+.tier-featured {
+  border-color: var(--accent-gold);
+  border-width: 3px;
+  box-shadow: var(--shadow-lg);
+}
+
+.tier-featured:hover {
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-xl);
+}
+
+.tier-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-gold);
+  color: var(--neutral-dark);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 20px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tier-title {
+  font-size: var(--font-size-xl);
+  color: var(--neutral-dark);
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--spacing-sm);
+}
+
+.tier-amount {
+  font-size: var(--font-size-3xl);
+  color: var(--primary-green);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.tier-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.tier-benefits li {
+  color: var(--color-text);
+  line-height: var(--line-height-relaxed);
+  padding-left: var(--spacing-lg);
+  position: relative;
+}
+
+.tier-benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+}
+
+.tier-benefits strong {
+  color: var(--neutral-dark);
+  font-weight: var(--font-weight-semibold);
+}
+
+
+/* ============================================
+   Returns Timeline Styles
+   ============================================ */
+.returns-timeline {
+  margin-bottom: var(--spacing-4xl);
+}
+
+.timeline-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+}
+
+.timeline-item {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--secondary-brown);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.timeline-item h4 {
+  color: var(--secondary-brown);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+}
+
+.return-percentage {
+  font-size: var(--font-size-2xl);
+  color: var(--primary-green);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+}
+
+.timeline-description {
+  color: var(--color-text);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: 0;
+}
+
+.disclaimer-text {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-md);
+  background-color: rgba(139, 69, 19, 0.05);
+  border-left: 4px solid var(--secondary-brown);
+  border-radius: 6px;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-relaxed);
+}
+
+
+/* ============================================
+   Partnership Details Styles
+   ============================================ */
+.partnership-details {
+  margin-bottom: var(--spacing-4xl);
+}
+
+.structure-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+}
+
+.structure-item {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+}
+
+.structure-item h4 {
+  color: var(--primary-green);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--neutral-light);
+}
+
+.structure-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.structure-item li {
+  color: var(--color-text);
+  line-height: var(--line-height-relaxed);
+  padding-left: var(--spacing-lg);
+  position: relative;
+}
+
+.structure-item li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);
+  line-height: 1;
+}
+
+.structure-item strong {
+  color: var(--neutral-dark);
+  font-weight: var(--font-weight-semibold);
+}
+
+
+/* ============================================
+   Risk Mitigation Styles
+   ============================================ */
+.risk-mitigation {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.mitigation-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+}
+
+.mitigation-item {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  border-top: 4px solid var(--accent-gold);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mitigation-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mitigation-item h4 {
+  color: var(--neutral-dark);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+}
+
+.mitigation-item p {
+  color: var(--color-text);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: 0;
+}
+
+
+/* ============================================
    Button Components
    ============================================ */
 .btn {
