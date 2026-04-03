@@ -5,8 +5,51 @@
     "styles/animations.css",
     "styles/responsive.css"
   ],
-  "files_modified": [],
+  "files_modified": [
+    "index.html",
+    "styles/components.css"
+  ],
   "decisions": [
+    {
+      "what": "Replaced hero section HTML structure in index.html",
+      "why": "Task specification required complete hero section with semantic HTML, headline 'Partner in Sustainable Rotation Crop Farming', compelling subheadline, CTA button 'Explore Partnership Opportunities', and background image integration using Unsplash URL"
+    },
+    {
+      "what": "Added .hero-section, .hero-background, .hero-overlay, .hero-content, .hero-headline, .hero-subheadline, and .cta-primary styles to components.css",
+      "why": "Specification required background image handling with background-size: cover, background-position: center, text overlay with linear-gradient for readability, responsive layout using Flexbox, and CTA button styling with hover/focus/active states"
+    },
+    {
+      "what": "Used button element instead of anchor for CTA in hero section",
+      "why": "Following HTML semantic patterns where button is appropriate for interactive actions, with proper ARIA attributes as specified"
+    },
+    {
+      "what": "Implemented gradient overlay with rgba transparency values",
+      "why": "Specification required linear-gradient with alpha transparency to ensure text readability over background image"
+    },
+    {
+      "what": "Applied CSS custom properties (--accent-gold, --neutral-dark, --white, etc.) for button colors and states",
+      "why": "Specification required using CSS custom properties for colors, maintaining consistency with existing base.css patterns"
+    },
+    {
+      "what": "Used clamp() for responsive typography in hero headline and subheadline",
+      "why": "Following existing project pattern for fluid responsive typography across all screen sizes"
+    },
+    {
+      "what": "Added text-shadow to headline and subheadline for enhanced readability",
+      "why": "Improves text contrast against background image, ensuring accessibility"
+    },
+    {
+      "what": "Positioned hero content using relative positioning with z-index layering",
+      "why": "Specification required proper semantic structure with background, overlay, and content layers"
+    },
+    {
+      "what": "Implemented hover, focus, and active states for .cta-primary button",
+      "why": "Specification explicitly required CTA button styling with hover/focus/active states for interactive feedback"
+    },
+    {
+      "what": "Used isolation: isolate on .hero-section",
+      "why": "Creates stacking context to ensure proper z-index layering of background, overlay, and content elements"
+    },
     {
       "what": "Implemented agricultural color scheme with CSS custom properties",
       "why": "Specification required primary-green, secondary-brown, accent-gold, and neutral colors for agricultural theme"
