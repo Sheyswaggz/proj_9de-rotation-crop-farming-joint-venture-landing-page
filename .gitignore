@@ -70,3 +70,6 @@ coverage/
 *.bak
 *.backup
 *.orig
+
+# Claude CLI task files
+arvad_task_files/
