@@ -361,106 +361,89 @@
       </div>
     </section>
 
-    <section id="contact" class="contact" aria-labelledby="contact-heading">
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
       <div class="container">
-        <h2 id="contact-heading">Start Your Partnership Journey</h2>
+        <h2 id="contact-heading">Get in Touch</h2>
         <p class="section-intro">Ready to explore this opportunity? Let's discuss how we can grow together.</p>
 
-        <div class="contact-wrapper">
-          <form class="contact-form" id="contact-form" aria-label="Partnership inquiry form">
-            <div class="form-row">
-              <div class="form-field">
-                <label for="name">Full Name <span aria-label="required">*</span></label>
-                <input type="text"
-                       id="name"
-                       name="name"
-                       required
-                       autocomplete="name"
-                       aria-describedby="name-error"
-                       aria-invalid="false">
-                <span id="name-error" class="error-message" role="alert"></span>
-              </div>
-
-              <div class="form-field">
-                <label for="email">Email Address <span aria-label="required">*</span></label>
-                <input type="email"
-                       id="email"
-                       name="email"
-                       required
-                       autocomplete="email"
-                       inputmode="email"
-                       aria-describedby="email-error"
-                       aria-invalid="false">
-                <span id="email-error" class="error-message" role="alert"></span>
-              </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name <span aria-label="required">*</span></label>
+              <input type="text"
+                     id="name"
+                     name="name"
+                     class="form-input"
+                     required
+                     autocomplete="name"
+                     aria-describedby="name-error"
+                     aria-label="Full Name">
+              <span id="name-error" class="error-message" role="alert"></span>
             </div>
 
-            <div class="form-row">
-              <div class="form-field">
-                <label for="phone">Phone Number</label>
-                <input type="tel"
-                       id="phone"
-                       name="phone"
-                       autocomplete="tel"
-                       inputmode="tel"
-                       aria-describedby="phone-error"
-                       aria-invalid="false">
-                <span id="phone-error" class="error-message" role="alert"></span>
-              </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email <span aria-label="required">*</span></label>
+              <input type="email"
+                     id="email"
+                     name="email"
+                     class="form-input"
+                     required
+                     autocomplete="email"
+                     aria-describedby="email-error"
+                     aria-label="Email Address">
+              <span id="email-error" class="error-message" role="alert"></span>
+            </div>
+          </div>
 
-              <div class="form-field">
-                <label for="investment-range">Investment Range <span aria-label="required">*</span></label>
-                <select id="investment-range"
-                        name="investment-range"
-                        required
-                        aria-describedby="investment-range-error"
-                        aria-invalid="false">
-                  <option value="">Select a range</option>
-                  <option value="250k-500k">$250,000 - $500,000</option>
-                  <option value="500k-750k">$500,000 - $750,000</option>
-                  <option value="750k-1m">$750,000 - $1,000,000</option>
-                  <option value="1m-plus">$1,000,000+</option>
-                </select>
-                <span id="investment-range-error" class="error-message" role="alert"></span>
-              </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel"
+                     id="phone"
+                     name="phone"
+                     class="form-input"
+                     autocomplete="tel"
+                     aria-describedby="phone-error"
+                     aria-label="Phone Number">
+              <span id="phone-error" class="error-message" role="alert"></span>
             </div>
 
-            <div class="form-field">
-              <label for="message">Message <span aria-label="required">*</span></label>
-              <textarea id="message"
-                        name="message"
-                        rows="6"
-                        required
-                        aria-describedby="message-error"
-                        aria-invalid="false"
-                        placeholder="Tell us about your interest in the joint venture opportunity..."></textarea>
-              <span id="message-error" class="error-message" role="alert"></span>
+            <div class="form-group">
+              <label for="interest-level" class="form-label">Investment Interest Level</label>
+              <select id="interest-level"
+                      name="interest-level"
+                      class="form-select"
+                      aria-describedby="interest-level-error"
+                      aria-label="Investment Interest Level">
+                <option value="">Select a range</option>
+                <option value="50k-100k">$50K-$100K</option>
+                <option value="100k-250k">$100K-$250K</option>
+                <option value="250k-plus">$250K+</option>
+                <option value="other">Other</option>
+              </select>
+              <span id="interest-level-error" class="error-message" role="alert"></span>
             </div>
+          </div>
 
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary btn-submit" aria-busy="false">
-                <span class="btn-text">Submit Inquiry</span>
-                <span class="btn-loader" aria-hidden="true"></span>
-                <span class="btn-success" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                </span>
-              </button>
-            </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message <span aria-label="required">*</span></label>
+            <textarea id="message"
+                      name="message"
+                      class="form-textarea"
+                      rows="6"
+                      required
+                      aria-describedby="message-error"
+                      aria-label="Message"></textarea>
+            <span id="message-error" class="error-message" role="alert"></span>
+          </div>
 
-            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
-          </form>
-
-          <aside class="contact-info">
-            <h3>Contact Information</h3>
-            <address>
-              <p><strong>Office Hours:</strong><br>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM</p>
-              <p><strong>Response Time:</strong><br>We typically respond to inquiries within 24-48 hours.</p>
-              <p><strong>Next Steps:</strong><br>After submitting this form, you'll receive our detailed partnership prospectus and can schedule a farm tour or video call with our team.</p>
-            </address>
-          </aside>
-        </div>
+          <div class="form-actions">
+            <button type="submit" class="submit-button" aria-busy="false">
+              <span class="button-text">Submit Inquiry</span>
+              <span class="button-loader" aria-hidden="true"></span>
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
